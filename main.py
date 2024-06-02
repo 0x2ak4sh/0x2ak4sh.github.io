@@ -1,5 +1,5 @@
 def main():
-    html = '<html><head><meta http-equiv="refresh" content="0;url={url}" /></head></html>'
+    html = '<html><head><meta http-equiv="refresh" content="0;url={url}" /><meta name="robots" content="noindex"></head></html>'
 
     with open('links.json') as f:
         links = json.load(f)
@@ -18,3 +18,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
